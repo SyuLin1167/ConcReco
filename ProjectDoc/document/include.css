@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h2 {
+    width: 50%;
+    border: solid 2px green;
+    background-color: greenyellow;
+    box-shadow: 0 10px 25px 0 black;
+}
+
+.move-top {
+    animation-name: move-top;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes move-top {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

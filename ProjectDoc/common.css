@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+h1 {
+    margin-top: 0px;
+    height: 55px;
+    color: black;
+    font-size: 40px;
+    border-bottom: solid 4px black;
+    text-shadow: 2px 2px 0 skyblue,2px -2px 0 skyblue,-2px 2px 0 skyblue,-2px -2px 0 skyblue;
+}
+
+table {
+    border: solid 4px black;
+    border-collapse: collapse;
+    width: 70%;
+    height: 300px;
+}
+
+th {
+    background-color: skyblue;
+    border: solid 2px black;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+    width: 20px;
+}
+
+td {
+    border: dotted 1px black;
+}
+
+.move-right {
+    animation-name: move-right;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes move-right {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.easy {
+    background: greenyellow;
+}
+
+.nomal {
+    background: sandybrown;
+}
+
+.hard {
+    background: palevioletred;
+}

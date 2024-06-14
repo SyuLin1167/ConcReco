@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../common.css">
+        <link rel="stylesheet" href="./config.css">
+        <title>コーディングスタイル</title>
+    </head>
+    <body>
+        <h1>コーディングスタイル</h1>
+        <div>
+            <a href="javascript:history.back()">戻る</a>
+        </div>
+        <div>
+            <h2>命名規則早見表</h2>
+            <nav>
+                <table>
+                    <thead>
+                        <th>項目名</th>
+                        <th>命名方法</th>
+                        <th>例</th>
+                        <th>備考</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ファイル</td>
+                            <td>スネークケース</td>
+                            <td>file_name.cpp</td>
+                            <td>小文字のみで記載</td>
+                        </tr>
+                        <tr>
+                            <td>変数・プロパティ</td>
+                            <td>キャメルケース</td>
+                            <td>variableName</td>
+                            <td>分かりにくい省略名は控える</td>
+                        </tr>
+                        <tr>
+                            <td>定数</td>
+                            <td>スネークケース</td>
+                            <td>MAX_COUNT</td>
+                            <td>大文字のみで記載</td>
+                        </tr>
+                        <tr>
+                            <td>関数・メソッド</td>
+                            <td>キャメルケース</td>
+                            <td>methodName()</td>
+                            <td>動詞名詞の形</td>
+                        </tr>
+                        <tr>
+                            <td>クラス</td>
+                            <td>パスカルケース</td>
+                            <td>ClassName</td>
+                            <td>構造体と列挙体もこれで書く</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </div>
+        <div>
+            <h2>詳細事項</h2>
+            <ul id="point">
+                <li>インクルード</li>
+                *順序は以下の通りに統一*<br>
+                <ul>
+                    <li>自身のソース対するヘッダ</li>
+                    <li>Cシステムファイル</li>
+                    <li>C++システムファイル</li>
+                    <li>その他ライブラリの .h ファイル</li>
+                    <li>プロジェクトの .h ファイル</li>
+                </ul>
+                <li>名前空間</li>
+                基本使用し、フォーマットは変数と同様
+                <li>条件分岐・繰り返し処理</li>
+                *以下のフォーマットで統一*<br>
+                if () {<br>
+                } else {<br>
+                }
+                <li>記載範囲制限</li>
+                一行につき80文字、命名は20文字までとし超える場合は省略名を使用する
+                <li>その他の事項に関してはこちらを参考にする</li>
+                <nav>
+                    <a href="https://qiita.com/shirakawa4756/items/55b509fb56cb1bb0c9a4#" target="_blank">C++コーディングスタイルメモ</a><br>
+                    <a href="https://ttsuki.github.io/styleguide/cppguide.ja.html" target="_blank">Google C++スタイルガイド</a>
+                </nav>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+#point > li {
+    margin-top: 10px;
+    font-weight: bold;
+    background: rgba(112, 216, 122, 0.497);
+    width: fit-content;
+}
